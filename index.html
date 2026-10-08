@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>URILE Design Tools</title>
+  <meta name="description" content="Free design tools untuk designer: color picker, palette generator, gradient, shadow, glassmorphism, ratio calculator, dan social media sizes.">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <a href="#" class="logo">
+      <span>U</span>RILE
+    </a>
+
+    <nav>
+      <a href="#tools">Tools</a>
+      <a href="#about">About</a>
+    </nav>
+
+    <button id="themeBtn" class="icon-btn" title="Ganti tema">☼</button>
+  </header>
+
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-badge">DESIGN TOOLKIT</div>
+
+    <h1>
+      Tools untuk<br>
+      <span>Designer.</span>
+    </h1>
+
+    <p>
+      Kumpulan tools sederhana untuk membantu proses desain,
+      mulai dari warna, gradient, shadow, ratio, hingga ukuran social media.
+    </p>
+
+    <a href="#tools" class="hero-btn">
+      Explore Tools →
+    </a>
+  </section>
+
+
+  <!-- TOOLS -->
+  <main id="tools">
+
+    <div class="section-heading">
+      <div>
+        <span class="eyebrow">TOOLBOX</span>
+        <h2>Design Tools</h2>
+      </div>
+
+      <p>
+        Pilih tool yang kamu butuhkan.
+      </p>
+    </div>
+
+
+    <div class="tools-grid">
+
+      <!-- COLOR PICKER -->
+      <article class="tool-card">
+        <div class="tool-number">01</div>
+        <h3>Color Picker</h3>
+        <p>Ambil warna dan dapatkan kode HEX, RGB, serta HSL.</p>
+
+        <div class="color-preview" id="colorPreview"></div>
+
+        <input type="color" id="colorInput" value="#7C3AED">
+
+        <div class="color-values">
+          <button onclick="copyText(document.getElementById('hexValue').textContent)">
+            HEX <b id="hexValue">#7C3AED</b>
+          </button>
+
+          <button onclick="copyText(document.getElementById('rgbValue').textContent)">
+            RGB <b id="rgbValue">124, 58, 237</b>
+          </button>
+
+          <button onclick="copyText(document.getElementById('hslValue').textContent)">
+            HSL <b id="hslValue">262, 83%, 58%</b>
+          </button>
+        </div>
+      </article>
+
+
+      <!-- PALETTE -->
+      <article class="tool-card">
+        <div class="tool-number">02</div>
+        <h3>Palette Generator</h3>
+        <p>Buat kombinasi warna secara otomatis.</p>
+
+        <div class="palette" id="palette">
+          <div style="background:#7C3AED"></div>
+          <div style="background:#2563EB"></div>
+          <div style="background:#06B6D4"></div>
+          <div style="background:#10B981"></div>
